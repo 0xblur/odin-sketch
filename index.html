@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sketch</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
       <h1>Etch-A-Sketch</h1>
     </header>
     <main>
-      <section>
+      <section id="controls">
         <h2>Controls</h2>
         <input type="range" id="grid-size" min="16" max="64" value="16">
-        <button id="rgb"></button>
-        <button id="shade"></button>
+        <button id="rgb">RGB</button>
+        <input type="color" id="color-picker">
+        <input type="range" id="shade" min="1" max="10" value="5">
       </section>
       <div id="grid-container">
       </div>

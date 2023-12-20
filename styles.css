@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+header {
+  align-self: center;
+}
+
+header>h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+
+main {
+  display: flex;
+  min-width: 80%;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#controls>h2 {
+  font-size: 3rem;
+}
+
+#grid-container {
+  width: 640px;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
