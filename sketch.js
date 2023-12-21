@@ -5,8 +5,9 @@ gridContainer.addEventListener("mousedown", (e) => { e.preventDefault(); isMouse
 gridContainer.addEventListener("mouseup", () => isMouseDown = false)
 
 function paintGrid(event, color) {
-  event.target.style.backgroundColor = color
   if (isMouseDown) { // Verify if cursor is being held down.
+    event.target.style.backgroundColor = color
+  }
 }
 
 function paintBlack() {
