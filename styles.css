@@ -24,7 +24,6 @@ header>h1 {
 
 main {
   display: flex;
-  min-width: 80%;
   border: 1px solid black;
   justify-content: center;
 }
