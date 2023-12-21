@@ -52,3 +52,10 @@ main {
 .grid-item {
   border: 1px solid black;
 }
+
+
+/* General behavior */
+
+.no-drag {
+  -webkit-user-drag: none;
+}
