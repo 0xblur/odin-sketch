@@ -22,6 +22,27 @@ function paintBlack() {
   gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color)))
 }
 
+function paintWhite() {
+  const color = "white";
+  const gridItems = document.querySelectorAll(".grid-item");
+  gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color)))
+}
+
+function getRGBColor() {
+  const red = Math.floor(Math.random() * 256); // 0-255
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+
+  return `rgb(${red}, ${green}, ${blue})`
+
+}
+
+function paintRGB() {
+  color = getRGBColor;
+  const gridItems = document.querySelectorAll(".grid-item");
+  gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color())))
+}
+
 function adjustGridSize() {
   const gridContainer = document.querySelector("#grid-container");
   const gridSize = Number(document.querySelector("#grid-size").value);
