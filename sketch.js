@@ -1,3 +1,16 @@
+const gridItems = document.querySelectorAll(".grid-item");
+gridItems.forEach((grid) => grid.addEventListener("click", (event) => paintGrid(event, color)))
+
+function paintGrid(event, color) {
+  event.target.style.backgroundColor = color
+}
+
+function paintBlack() {
+  const color = "black";
+  const gridItems = document.querySelectorAll(".grid-item");
+  gridItems.forEach((grid) => grid.addEventListener("click", (event) => paintGrid(event, color)))
+}
+
 function adjustGridSize() {
   const gridContainer = document.querySelector("#grid-container");
   const gridSize = Number(document.querySelector("#grid-size").value);
