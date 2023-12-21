@@ -13,7 +13,7 @@ function paintGrid(event, color) {
 function paintBlack() {
   const color = "black";
   const gridItems = document.querySelectorAll(".grid-item");
-  gridItems.forEach((grid) => grid.addEventListener("click", (event) => paintGrid(event, color)))
+  gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color)))
 }
 
 function adjustGridSize() {
