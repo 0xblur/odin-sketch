@@ -1,5 +1,3 @@
-const gridItems = document.querySelectorAll(".grid-item");
-gridItems.forEach((grid) => grid.addEventListener("click", (event) => paintGrid(event, color)))
 // Paint grids only if you're passing through them with the cursor button pressed or held down.
 const gridContainer = document.querySelector("#grid-container");
 let isMouseDown = false;
