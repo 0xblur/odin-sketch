@@ -48,3 +48,7 @@ main {
   flex-wrap: wrap;
   cursor: crosshair;
 }
+
+.grid-item {
+  border: 1px solid black;
+}
