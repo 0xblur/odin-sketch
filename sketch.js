@@ -14,6 +14,12 @@ function paintGrid(event, color) {
       event.target.style.border = "1px solid black"
     }
   }
+
+function paintSpecificColor() {
+  const colorPicker = document.querySelector("#color-picker");
+  const color = colorPicker.value;
+  const gridItems = document.querySelectorAll(".grid-item");
+  gridItems.forEach((grid) => grid.addEventListener("mouseenter", (event) => paintGrid(event, color)))
 }
 
 function paintBlack() {
