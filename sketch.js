@@ -43,6 +43,19 @@ function paintRGB() {
   gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color())))
 }
 
+//Buttons
+const rgbBtn = document.querySelector("#rgb");
+rgbBtn.addEventListener("click", () => paintRGB())
+
+const eraserBtn = document.querySelector("#eraser");
+eraserBtn.addEventListener("click", () => paintWhite())
+
+const colorPicker = document.querySelector("#color-picker");
+colorPicker.addEventListener("change", (event) => paintSpecificColor());
+
+const classicBtn = document.querySelector("#classic");
+classicBtn.addEventListener("click", () => paintBlack())
+
 function adjustGridSize() {
   const gridContainer = document.querySelector("#grid-container");
   const gridSize = Number(document.querySelector("#grid-size").value);
