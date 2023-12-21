@@ -38,7 +38,7 @@ function getRGBColor() {
 }
 
 function paintRGB() {
-  color = getRGBColor;
+  const color = getRGBColor;
   const gridItems = document.querySelectorAll(".grid-item");
   gridItems.forEach((grid) => grid.addEventListener("mousemove", (event) => paintGrid(event, color())))
 }
