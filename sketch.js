@@ -7,6 +7,12 @@ gridContainer.addEventListener("mouseup", () => isMouseDown = false)
 function paintGrid(event, color) {
   if (isMouseDown) { // Verify if cursor is being held down.
     event.target.style.backgroundColor = color
+    // Only white grids have border.
+    if (color != "white") {
+      event.target.style.border = "none";
+    } else {
+      event.target.style.border = "1px solid black"
+    }
   }
 }
 
