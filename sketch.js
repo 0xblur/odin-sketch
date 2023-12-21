@@ -25,7 +25,7 @@ function adjustGridSize() {
 
   for (let i = 0; i < gridSize * gridSize; i++) {
     const gridItem = document.createElement("div");
-    gridItem.classList.add("grid-item");
+    gridItem.classList.add("grid-item", "no-drag");
     gridContainer.appendChild(gridItem);
   }
 
